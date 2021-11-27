@@ -109,3 +109,9 @@ let mapleader = " "
 nnoremap <leader>ff <cmd>Telescope git_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
+
+" Change windonws.
+nnoremap <leader>h :wincmd h<Cr>
+nnoremap <leader>j :wincmd j<Cr>
+nnoremap <leader>k :wincmd k<Cr>
+nnoremap <leader>l :wincmd l<Cr>
