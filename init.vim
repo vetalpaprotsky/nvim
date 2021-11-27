@@ -75,15 +75,18 @@ Plug 'tpope/vim-fugitive'
 " Git lines diff.
 Plug 'lewis6991/gitsigns.nvim'
 
-" LSP
+" LSP.
 Plug 'neovim/nvim-lspconfig'
 
-" Autocompletion
+" Autocompletion.
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'onsails/lspkind-nvim'
+
+" Better language support.
+Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
 
 call plug#end()
 
@@ -100,7 +103,7 @@ set background=dark
 " ******************** MAPPINGS ********************
 
 inoremap jk <ESC>
-let mapleader = "'"
+let mapleader = " "
 
 " Telescope.
 nnoremap <leader>ff <cmd>Telescope git_files<cr>
